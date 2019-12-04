@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>DivCalc</title>
+    <link rel="stylesheet" type="text/css" href="divcd.css" media="screen" />
+    <script type = "text/javascript" src = "divcf.js" ></script>
+</head>
+<body>
+    <div id="wet">
+        <h2>Welcome!!</h2>
+        <h3>Now CALCULATE your discount!!!</h3>
+    </div>
+    <div class = "demo"> 
+        <p>How much is the amount of your bill?</p>
+        <p>$ <input id="amt" type="number" placeholder="Amount"></p>
+        <p id="we1">What was the discount percentage? Choose the discount percentage you got!</p>
+        <select id="disc">
+            <option disabled selected value = "0">Choose the discount percentage</option>
+            <option value="0.5">50% Discount</option>
+            <option value="0.4">40% Discount</option>
+            <option value="0.3">30% Discount</option>
+            <option value="0.2">20% Discount</option>
+            <option value="0.1">10% Discount</option>
+            <option value="0.05">5% Discount</option>
+        </select>
+
+        <p>So, the total bill came as</p>
+        <button onclick="myfunc1()">Calculate</button>
+        <p id="wer">$ <span id="demo1"></span> is the total bill amount to be paid.</p>
+
+        <p>If you want to pay the bill separately.Then, enter the number of persons sharing the bill</p>
+        <p><input id="noper" type="number" placeholder="Number of Persons"> persons</p>
+        <button onclick="myfunc2()">Calculate</button>
+        <p id="wes">$ <span id="demo2"></span> is to be paid per person.</p>
+    </div>
+</body>
